@@ -1,0 +1,9 @@
+spring:
+  profiles: dev
+my:
+  message: Message from Development
+---
+spring:
+  profiles: pro
+my:
+  message: Message from Production
