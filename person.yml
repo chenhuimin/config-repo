@@ -1,7 +1,15 @@
 spring:
   profiles: dev
   jpa:
-    database: HSQL
+    database: MYSQL
+    hibernate:
+      ddl-auto: update
+  datasource:
+    platform: mysql
+    url: jdbc:mysql://192.168.50.10:30802/person?useUnicode=true&amp;characterEncoding=utf-8
+    username: root
+    password: 123abc..
+    driver-class-name: com.mysql.jdbc.Driver
 ---
 spring:
   profiles: pro
@@ -11,7 +19,7 @@ spring:
       ddl-auto: update
   datasource:
     platform: mysql
-    url: jdbc:mysql://172.16.91.73:3306/person?useUnicode=true&amp;characterEncoding=utf-8
+    url: jdbc:mysql://mysql:3306/person?useUnicode=true&amp;characterEncoding=utf-8
     username: root
     password: 123abc..
     driver-class-name: com.mysql.jdbc.Driver
