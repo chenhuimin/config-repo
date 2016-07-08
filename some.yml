@@ -6,4 +6,4 @@ my:
 spring:
   profiles: pro
 my:
-  message: Message from Production
+  message: Message from Production1
